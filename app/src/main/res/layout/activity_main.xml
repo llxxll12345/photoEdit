@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/btnMosaic"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar"
+        android:text="马赛克" />
+
+    <Button
+        android:id="@+id/btnBlur"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMosaic"
+        android:text="模糊" />
+
+    <Button
+        android:id="@+id/btnGray"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBlur"
+        android:text="灰度" />
+
+    <Button
+        android:id="@+id/btnRepair"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGray"
+        android:text="去水印/修复污渍" />
+
+    <Button
+        android:id="@+id/btnContour"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRepair"
+        android:text="边框过滤" />
+
+    <Button
+        android:id="@+id/btnBlob"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnContour"
+        android:text="颜色取样" />
+
+</RelativeLayout>
